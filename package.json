@@ -1,0 +1,31 @@
+{
+  "name": "products",
+  "version": "1.0.0",
+  "description": "products api node js for jardin climbing store demo app",
+  "main": "catalogue.js",
+  "scripts": {
+    "start": "node catalogue.js"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "express",
+    "api",
+    "RESTful",
+    "climbing",
+    "store",
+    "demo",
+    "products"
+  ],
+  "author": "Toby Knight",
+  "license": "ISC",
+  "dependencies": {
+    "@aws/dynamodb-data-mapper": "^0.7.3",
+    "aws-sdk": "^2.524.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.11",
+    "randomhex": "^0.1.5"
+  }
+}
