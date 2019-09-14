@@ -36,6 +36,7 @@ switch(app.get('env')){
     default:
         throw new Error('Unknown execution environment: ' + app.get('env'));
 };
+
 var docClient = new AWS.DynamoDB.DocumentClient();
 var tableName = credentials.dynamoDB.development.TableName;
 
