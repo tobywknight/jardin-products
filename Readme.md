@@ -1,19 +1,17 @@
 # Jardin Products - Node.js API service uses AWS DynamoDB
-
 Copyright Toby Knight 2019.
-
 
 ## Overview
 
 Jardin Products is a simple Node.js, RESTful web service using Express to serve simple product data.
 
-## Quick start
-
+## Quick start
 You need to create your own DynamoDB table.
 [TO DO:  Add detailed instructions to create table, or add CloudFormation template.]
 
 ```
 git clone https://github.com/tobywknight/jardin-products.git
+cd jardin-products
 npm install
 ```
 

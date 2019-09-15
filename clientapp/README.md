@@ -1,6 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-Client app is a web app built using React and Bootstrap.
+# Jardin Products Client App
+Client app is a web app built using React and Bootstrap that retrieves product data retrieved from the Jardin Products Node.js api and presents in the web browser.   It also allows product images to be presented. 
 
 ## Setup
 
