@@ -1,54 +1,64 @@
-# Jardin Products Client App
-Client app is a web app built using React and Bootstrap that retrieves product data retrieved from the Jardin Products Node.js api and presents in the web browser.   It also allows product images to be presented. 
+# Jardin Products Client App
 
-## Setup
+Jardin Products Client app is a web app built using React and Bootstrap that retrieves product data retrieved from the Jardin Products Node.js api and presents in the web browser.   It also allows product images to be presented.
+
+## Setup
 
 Before you can run the site, there are a few things you need to do first:
-- Configure the URL where your image files will be served from.  (I used an AWS S3 bucket.)
-- Configure the URL where your Products API will be served from.  This is the deployment of the Node.js web service contained in the project root.  For development, you can run in locally. For deployment testing, I deployed it on AWS EC2, but for production use, a container-based deployment might be preferable. 
 
-### Configure URL for image files
+- Configure the URL where your image files will be served from.  (I used an AWS S3 bucket.)
+- Configure the URL where your Products API will be served from.  This is the deployment of the Node.js web service contained in the project root.  For development, you can run in locally. For deployment testing, I deployed it on AWS EC2, but for production use, a container-based deployment might be preferable.
+
+### Configure URL for image files
+
 Open ./<your project folder>/clientapp/src/components/products.js
 Edit the URL in following line to include the correct S3 bucket name and the AWS region that bucket is located in.
 
-```
+```Javascript
 const imgFolderUrl = "https://<your-bucket-name>.s3-<aws-region>.amazonaws.com/products/";
 ```
+
 For example:
-```
+
+```Javascript
 const imgFolderUrl = "https://my-image-bucket.s3-eu-west-1.amazonaws.com/products/";
 ```
 
-### Configure URL for Products API:
+### Configure URL for Products API:
+
 Open ./<your project folder>/clientapp/src/App.js
 Edit the URL in the following line to include the correct server DNS name (or IP address) where you have deployed your Products API web service:
-```
+
+```Javascript
 const apiUri = "http://<your-server>/api/products/";
 ```
+
 For example:
-```
+
+```Javascript
 const apiUri = "http://my-server-address.example.com/api/products/";
 ```
+
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
+The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
+Launches the test runner in the interactive watch mode.
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
