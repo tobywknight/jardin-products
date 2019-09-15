@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Products from './components/products';
 
-const apiUri = 'http://<your-server>/api/products/';
+const apiUri = "http://<your-server>/api/products/";
 
 class App extends Component {
   state = {

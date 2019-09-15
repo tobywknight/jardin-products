@@ -1,6 +1,6 @@
 import React from 'react';
 
-const imgFolderUrl = "https://<your-bucket-name>.s3-eu-west-1.amazonaws.com/products/";
+const imgFolderUrl = "https://<your-bucket-name>.<aws-region>.amazonaws.com/products/";
 const imgFileSuffix = ".jpg";
 
 const Products = ({ products }) => {
